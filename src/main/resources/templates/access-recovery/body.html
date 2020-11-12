@@ -1,0 +1,25 @@
+<div>
+	<p style="font-family:Helvetica-Light,Arial;font-size:30px;color:#404d65;line-height:44px;font-weight:normal;padding:0;margin:0;text-align:center;word-wrap:normal;margin-bottom:10px">
+		Olá ${username}, recebemos uma solicitação de recuperação de senha de sua conta no AgendaSUS
+	</p>
+	<p style="margin:0;margin-bottom:10px;font-family:Helvetica-Light,Arial;font-size:20px;color:#404d65;line-height:1.6;font-weight:normal;padding:0;text-align:center">
+		Endereço IP de solicitação: ${requestIP}.
+	</p>
+</div>
+
+<div>
+	<a href="${linkPasswordRecovery}" style="font-family:Helvetica-Light,Arial;color:#ffffff;line-height:27px;text-decoration:none;font-size:16px;display:inline-block;padding:10px 20px 10px 20px;border:0px solid #2199e8;border-radius:3px" target="_blank">
+		Clique aqui para alterar sua senha
+	</a>
+</div>
+
+<div>
+	<p>
+		Atenção: Este link é válido por 1 hora. Caso o mesmo não esteja mais válido, solicite uma nova alteração de senha repetindo o processo
+	</p>
+	<p style="margin:0;margin-bottom:10px;font-family:Helvetica-Light,Arial;font-size:14px;color:#8a92a1;line-height:26px;font-weight:normal;padding:0;text-align:center">
+		Caso você não tenha solicitado a recuperação de senha, clique
+		<a href="${linkInvalidateRecovery}" style="font-family:Helvetica,Arial;color:#49b7ff;line-height:27px;text-decoration:none" target="_blank">aqui</a>
+		para invalidar o link imediatamente
+	</p>
+</div>

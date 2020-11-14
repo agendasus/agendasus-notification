@@ -1,4 +1,4 @@
-package br.com.agendasus.notification.infrastructure.security;
+package br.com.agendasus.notification.email.v1.infrastructure.security;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;

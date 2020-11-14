@@ -1,4 +1,4 @@
-package br.com.agendasus.notification.infrastructure.system;
+package br.com.agendasus.notification.email.v1.infrastructure.system;
 
 import br.com.agendasus.notification.AgendaSUSApp;
 import org.apache.maven.model.Model;

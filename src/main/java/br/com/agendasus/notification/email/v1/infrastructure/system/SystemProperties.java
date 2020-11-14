@@ -1,4 +1,4 @@
-package br.com.agendasus.notification.infrastructure.system;
+package br.com.agendasus.notification.email.v1.infrastructure.system;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

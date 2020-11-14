@@ -1,4 +1,4 @@
-package br.com.agendasus.notification.infrastructure.system;
+package br.com.agendasus.notification.email.v1.infrastructure.system;
 
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.context.NoSuchMessageException;

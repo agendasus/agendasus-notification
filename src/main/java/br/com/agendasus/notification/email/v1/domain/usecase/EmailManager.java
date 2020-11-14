@@ -1,7 +1,7 @@
 package br.com.agendasus.notification.email.v1.domain.usecase;
 
 import br.com.agendasus.notification.email.v1.dto.ReceiverEmailDTO;
-import br.com.agendasus.notification.infrastructure.system.SystemProperties;
+import br.com.agendasus.notification.email.v1.infrastructure.system.SystemProperties;
 import br.com.agendasus.notification.email.v1.dto.EmailDTO;
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;

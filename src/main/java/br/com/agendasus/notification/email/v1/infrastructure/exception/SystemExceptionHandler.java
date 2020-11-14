@@ -1,4 +1,4 @@
-package br.com.agendasus.notification.infrastructure.exception;
+package br.com.agendasus.notification.email.v1.infrastructure.exception;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

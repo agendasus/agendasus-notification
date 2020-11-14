@@ -16,16 +16,16 @@ public class AccessRecoveryEmail extends EmailManager<AccessRecoveryEmailDTO> {
     @Override
     String getContent(AccessRecoveryEmailDTO emailDTO) {
         String template = takeTemplate(TEMPLATE_NAME);
-        template.replace("${username}", emailDTO.getReceivers().get(0).getName());
-        template.replace("${requestIP}", emailDTO.getRequestIP());
-        template.replace("${linkPasswordRecovery}", emailDTO.getLinkPasswordRecovery());
-        template.replace("${linkInvalidateRecovery}", emailDTO.getLinkInvalidateRecovery());
+        template = template.replace("${username}", emailDTO.getReceivers().get(0).getName());
+        template = template.replace("${requestIP}", emailDTO.getRequestIP());
+        template = template.replace("${linkPasswordRecovery}", emailDTO.getLinkPasswordRecovery());
+        template = template.replace("${linkInvalidateRecovery}", emailDTO.getLinkInvalidateRecovery());
         return template;
     }
 
     @Override
     void printLogInfo(AccessRecoveryEmailDTO emailDTO) {
-        logger.info("Sending email <access-recovery> to: {}", emailDTO.getReceivers().toString());
+        logger.info("Sending dto <access-recovery> to: {}", emailDTO.getReceivers().toString());
     }
 
 }

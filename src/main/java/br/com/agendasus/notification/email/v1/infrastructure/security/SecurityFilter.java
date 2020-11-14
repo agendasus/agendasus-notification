@@ -25,7 +25,12 @@ public class SecurityFilter implements Filter {
         HttpServletResponse response = (HttpServletResponse) resp;
         HttpServletRequest request = (HttpServletRequest) req;
 
-        if (AUTHORIZATION_TOKEN.equals(request.getHeader("authorization"))) {
+        if (AUTHORIZATION_TOKEN.equals(request.getHeader("Authorization"))
+                || request.getRequestURI().contains("/v2/api-docs")
+                || request.getRequestURI().contains("/swagger-ui")
+                || request.getRequestURI().contains("/swagger-resources")
+                || request.getRequestURI().contains("/webjars")
+        ) {
             chain.doFilter(req, resp);
         } else {
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);

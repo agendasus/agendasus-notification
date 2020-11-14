@@ -39,14 +39,14 @@ public abstract class EmailManager<T extends EmailDTO> {
 
         for(ReceiverEmailDTO receiver : emailDTO.getReceivers()) {
             if(!isEmail(receiver.getAddress())) {
-                logger.warn("Invalid email: {}", receiver.getAddress());
+                logger.warn("Invalid dto: {}", receiver.getAddress());
                 continue;
             }
 
             try {
                 send(receiver.getAddress(), emailDTO.getSubject(), template);
             } catch (MessagingException e) {
-                logger.warn("It wasn't possible to send the email to follow address: {}", receiver.getAddress());
+                logger.warn("It wasn't possible to send the dto to follow address: {}", receiver.getAddress());
             }
         }
         printLogInfo(emailDTO);
@@ -85,8 +85,8 @@ public abstract class EmailManager<T extends EmailDTO> {
         try (InputStream in = new BufferedInputStream(new ClassPathResource(ROOT_DIR + path).getInputStream())){
             content = IOUtils.toString(in, "UTF-8");
         } catch (Exception e) {
-            logger.error("Error to get email template from file", e);
-            throw new RuntimeException("Error to get email template from file", e);
+            logger.error("Error to get dto template from file", e);
+            throw new RuntimeException("Error to get dto template from file", e);
         }
         return content;
     }

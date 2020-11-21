@@ -10,7 +10,6 @@ Environment Variables
 - **MAIL_USERNAME**: Email user account
 - **MAIL_PASSWORD**: Email password account
 
-- **EUREKA_ZONE**: Eureka server address (Default: http://localhost:8761/eureka)
+- **EUREKA_ZONE**: Eureka server address with security credentials (Default: http://agendasus:4G3ND4Pass@localhost:8761/eureka)
 - **EUREKA_HOST**: Eureka server hostname (Default: localhost)
-- **EUREKA_IP**: IP address used to register on Eureka server (Default: localhost)
 - **EUREKA_PREFER_IP**: Flag to define if the service will register with IP (true) or hostname (false) (Default: true)
